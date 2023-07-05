@@ -2,6 +2,17 @@
 
 Disclaimer: This guide only applies to ayn odin lite M2. I don't own M0 or any other ayn handheld so I cannot test my ports on them. Also everything described here comes at a risk of bricking your device. So think twice before you will do it.
 
+## Useful information
+
+Shortcuts( hold until you see the boot logo, then release the power button ):
+
+- vol. up + pwr. - Service menu writen in chinese. Last options restarts the device.
+- vol. down + pwr. - Boot menu( Disclaimer info on the screen is incorret so BUTTON_UP accepts the otpion, while BUTTON_DOWN changes to the next one. I hink it is the same problem for the `fastboot flashing unlock` when the buttons are again incorectly labeled. ):
+  - Recovery
+  - Fastboot
+  - Normal
+- vol. up + vol. down + pwr. - Does nothing and will boot up to the option depending on which volume button you have pressed first.
+
 ## Unlocking bootloader:
 
 ### 1. Disable oem lock
@@ -10,7 +21,7 @@ Click 5 times on build number in settings to enable developer settings. Then in 
 
 ### 2. Unlock flashing
 
-Now you can type this commands to unlock the device. **THIS IS LAST WORNING AFTER THIS STEP THERE IS NO TURNING BACK. UNLOCKING BOOTLOADER CAN BRICK YOUR DEVICE AND WILL VOID YOUR WARRANTY. BE AWARE OF THE RISKS.** Also this step will erase your whole device memory so its recomended to make backup beforhend.
+Now you can type this commands to unlock the device. **THIS IS LAST WARNING AFTER THIS STEP THERE IS NO TURNING BACK. UNLOCKING BOOTLOADER CAN BRICK YOUR DEVICE AND WILL VOID YOUR WARRANTY. BE AWARE OF THE RISKS.** Also this step will erase your whole device memory so its recomended to make backup beforhend.
 
 ```sh
 adb reboot bootloader
