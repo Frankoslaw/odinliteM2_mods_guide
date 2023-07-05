@@ -1,0 +1,3 @@
+[submodule "recovery_device_odin_lite_M2"]
+	path = recovery_device_odin_lite_M2
+	url = https://github.com/Frankoslaw/recovery_device_odin_lite_M2
